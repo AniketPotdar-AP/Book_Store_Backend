@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const dotenv = require("dotenv");
-dotenv.config()
+dotenv.config();
 
 const port = process.env.PORT || 3000;
 
@@ -22,4 +22,4 @@ mongoose
     .catch((err) => console.log(err));
 
 const book = require("./api/routes/book");
-app.use('/', book)
+app.use("/", book);
