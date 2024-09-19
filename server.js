@@ -22,4 +22,7 @@ mongoose
     .catch((err) => console.log(err));
 
 const book = require("./api/routes/book");
+const user = require("./api/routes/user");
+
 app.use("/", book);
+app.use("/", user);
