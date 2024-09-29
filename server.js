@@ -19,7 +19,7 @@ mongoose
             console.log(`Running on port ${port}`);
         })
     )
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err)); 
 
 const book = require("./api/routes/book");
 const user = require("./api/routes/user");
